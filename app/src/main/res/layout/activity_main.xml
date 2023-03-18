@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Sign Up"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/phoneNumText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Phone Number"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/signup"
+        app:layout_constraintTop_toBottomOf="@id/signup"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/phoneNumField"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/phoneNumText"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="50dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/usernameText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Username"
+        android:textStyle="bold"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintStart_toStartOf="@id/phoneNumField"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumField"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameField"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/phoneNumField"
+        app:layout_constraintTop_toBottomOf="@id/phoneNumField">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/passwordText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Password"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/usernameField"
+        app:layout_constraintTop_toBottomOf="@id/usernameField"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordField"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/passwordText"
+        app:layout_constraintTop_toBottomOf="@id/passwordText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/dateOfBirthText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Date of Birth"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/passwordField"
+        app:layout_constraintTop_toBottomOf="@id/passwordField" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/dateOfBirthField"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@id/dateOfBirthText"
+        app:layout_constraintTop_toBottomOf="@id/dateOfBirthText">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="200dp"
+            android:layout_height="50dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
